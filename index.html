@@ -2,16 +2,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Warriors Name Generator</title>
+    <title>BoWarriors Kitty Gen</title>
   </head>
   <body>
+       <main role="main" class="container">
+      <h1 class="mb-4" id="displayName"></h1>
+      <button class="btn btn-primary" type="button" onclick="generateName()">Next</button>
+      <hr class="my-4" />
+      <div class="custom-control custom-switch">
+      
+    </main>
   
 <script src="../data/name.js"></script>
     <script>
       const basePrefixes = data.prefixes;
       const baseSuffixes = data.suffixes;
-      const unweightedPrefixes = [...new Set(basePrefixes)];
-      const unweightedSuffixes = [...new Set(baseSuffixes)];
       let prefixes = basePrefixes;
       let suffixes = baseSuffixes;
       }
