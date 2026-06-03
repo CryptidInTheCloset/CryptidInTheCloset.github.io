@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Warriors Name Generator</title>
+  </head>
+  <body>
+  
+<script src="../data/name"></script>
+    <script>
+      const basePrefixes = data.prefixes;
+      const baseSuffixes = data.suffixes;
+      const unweightedPrefixes = [...new Set(basePrefixes)];
+      const unweightedSuffixes = [...new Set(baseSuffixes)];
+      let prefixes = basePrefixes;
+      let suffixes = baseSuffixes;
+      }
+
+      function generateName() {
+        const prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
+        suffix = suffixes[Math.floor(Math.random() * suffixes.length)];
+        }
+        const name =  prefix.charAt(0).toUpperCase() + prefix.slice(1) + suffix;
+        document.getElementById("displayName").innerHTML = name;
+      }
+      generateName();
+    </script>
+
+  </body>
+</html>
